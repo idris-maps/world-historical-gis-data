@@ -1,21 +1,26 @@
 {
-  "name": "thinkquest-history",
+  "name": "world-historical-gis-data",
   "version": "1.0.0",
-  "description": "https://github.com/aourednik/historical-basemaps https://www.gislounge.com/find-gis-data-historical-country-boundaries/ http://web.archive.org/web/20080328104539/http://library.thinkquest.org:80/C006628/download.html",
-  "main": "index.js",
+  "description": "World Historical GIS Data: 2000 BCE to 1994 CE",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "prepublish": "npm run build"
   },
-  "keywords": [],
+  "keywords": ["history", "geojson", "topojson"],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "topojson-client": "^3.1.0"
   },
   "devDependencies": {
-    "@types/topojson-client": "^3.0.0",
+    "@types/geojson": "^7946.0.7",
+    "@types/topojson": "^3.2.2",
     "geojson-precision": "^1.0.0",
     "martinez-polygon-clipping": "^0.7.0",
+    "ts-node": "^8.10.1",
     "typescript": "^3.8.3"
   }
 }
