@@ -1,0 +1,21 @@
+{
+  "name": "thinkquest-history",
+  "version": "1.0.0",
+  "description": "https://github.com/aourednik/historical-basemaps https://www.gislounge.com/find-gis-data-historical-country-boundaries/ http://web.archive.org/web/20080328104539/http://library.thinkquest.org:80/C006628/download.html",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "topojson-client": "^3.1.0"
+  },
+  "devDependencies": {
+    "@types/topojson-client": "^3.0.0",
+    "geojson-precision": "^1.0.0",
+    "martinez-polygon-clipping": "^0.7.0",
+    "typescript": "^3.8.3"
+  }
+}
